@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.inner {
+  min-width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner caption {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.inner table {
+  padding: 2rem;
+  border-collapse: collapse;
+  border: 2px solid #333;
+}
+
+.inner th {
+  border: 1px solid #333;
+  padding: 1rem;
+  background-color: #cecece;
+}
+
+.inner tr {
+  border: 1px solid #333;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.inner td {
+  font-size: 1.6rem;
+  border: 1px solid #333;
+  padding: 1rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.form__button {
+  cursor: pointer;
+  width: 10rem;
+  height: 5rem;
+  display: inline-block;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.form__button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.form__button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.form__button:hover {
+  color: #fff;
+}
+
+.form__button:hover::before {
+  width: 100%;
+}
+
+.form select {
+  text-align: center;
+  width: 15rem;
+  height: 5rem;
+  outline: none;
+  border-radius: 8px;
+  padding: .5rem;
+}
+
+.font-italic {
+  color: blue;
+  font-style: italic;
+}
+
+.color-red {
+  background-color: #ff2727;
+}
+
+.color-green {
+  background-color: #1cff1c;
+}
+
+.color-blue {
+  background-color: #1060ff;
+}
+
+.color-yellow {
+  background-color: #fff820;
+}
+
+.nothing {
+  background-color: white;
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */
